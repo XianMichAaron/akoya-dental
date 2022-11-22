@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase 9</title>
+</head>
+<body>
+  <h1>Getting Started with Firebase 9</h1>
+
+  <h2>Firebase Auth</h2>
+
+  <form class="loginUser">
+    <br><label for="email">email:</label>
+    <input type="email"name="email"><br>
+
+    <label for="password">password:</label>
+    <input type="password" name="password"><br>
+    <button>login</button>
+  </form>
+
+  <button class="logoutUser">logout</button>
+
+  <h2>Unsubscribing</h2>
+  <button class="unsub">unsubscribe from db/auth changes</button>
+  
+  <br>____________________________________________<br>
+  <form class="signupUser">
+    <br><label for="email">email:</label>
+    <input type="email"name="email"><br>
+
+    <label for="password">password:</label>
+    <input type="password" name="password"><br>
+
+    <button>signup</button>
+  </form>
+
+  <br>____________________________________________<br>
+
+  <h2>Firebase Firestore</h2>
+
+  <form class="addAppointment">
+
+    <h3>Appointment</h3>
+    <label for="lastName">lastName:</label>
+    <input type="text" name="lastName" required><br>
+
+    <label for="firstName">firstName:</label>
+    <input type="text" name="firstName" required><br>
+    
+    <label for="contactNumber">contactNumber:</label>
+    <input type="number" name="contactNumber" required><br>
+
+    <label for="birthDate">birthDate:</label>
+    <input type="timestamp" name="birthDate" required><br>
+
+    <label for="preferredAppointmentDate">preferredAppointmentDate:</label>
+    <input type="timestamp" name="preferredAppointmentDate" required><br>
+
+    <label for="currentPatient">currentPatient:</label>
+    <input type="boolean" name="currentPatient" required><br>
+
+    <br><button>Add new appointment</button>
+  </form>
+
+  <form class="deleteAppointment">
+    <label for="id">Appointment id:</label>
+    <input type="text" name="id" required>
+
+    <button>delete an appointment</button>
+  </form>
+
+  <form class="updateAppointment">
+    <label for="id">Appointment id:</label>
+    <input type="text" name="id" required>
+
+    <button>update an appointment</button>
+  </form>
+
+  <br>____________________________________________<br>
+
+  <form class="addPatient">
+
+    <h3>Patient</h3>
+    <br><label for="lastName">lastName:</label>
+    <input type="text" name="lastName" required><br>
+
+    <label for="firstName">firstName:</label>
+    <input type="text" name="firstName" required><br>
+    
+    <label for="contactNumber">contactNumber:</label>
+    <input type="number" name="contactNumber" required><br>
+
+    <label for="birthDate">birthDate:</label>
+    <input type="timestamp" name="birthDate" required><br>
+
+    <label for="email">email:</label>
+    <input type="string" name="email" required><br>
+
+    <br><button>Add new patient</button>
+  </form>
+
+  <form class="deletePatient">
+    <label for="id">Patient id:</label>
+    <input type="text" name="id" required>
+
+    <button>delete a patient</button>
+  </form>
+
+  <form class="updatePatient">
+    <label for="id">Patient id:</label>
+    <input type="text" name="id" required>
+
+    <button>update a patient</button>
+  </form>
+
+  <br>____________________________________________<br>
+
+  <form class="addDoctor">
+
+    <h3>Doctor</h3>
+    <br><label for="lastName">lastName:</label>
+    <input type="text" name="lastName" required><br>
+
+    <label for="firstName">firstName:</label>
+    <input type="text" name="firstName" required><br>
+    
+    <label for="contactNumber">contactNumber:</label>
+    <input type="number" name="contactNumber" required><br>
+
+    <label for="birthDate">birthDate:</label>
+    <input type="timestamp" name="birthDate" required><br>
+
+    <label for="email">email:</label>
+    <input type="string" name="email" required><br>
+
+    <br><button>Add new doctor</button>
+  </form>
+
+  <form class="deleteDoctor">
+    <label for="id">Doctor id:</label>
+    <input type="text" name="id" required>
+
+    <button>delete a doctor</button>
+  </form>
+
+  <form class="updateDoctor">
+    <label for="id">Doctor id:</label>
+    <input type="text" name="id" required>
+
+    <button>update a doctor</button>
+  </form>
+
+  <br>____________________________________________<br>
+
+  <form class="addAdmin">
+
+    <h3>Admin</h3>
+    <br><label for="lastName">lastName:</label>
+    <input type="text" name="lastName" required><br>
+
+    <label for="firstName">firstName:</label>
+    <input type="text" name="firstName" required><br>
+
+    <label for="email">email:</label>
+    <input type="string" name="email" required><br>
+
+    <br><button>Add new Admin</button>
+  </form>
+
+  <form class="deleteAdmin">
+    <label for="id">Admin id:</label>
+    <input type="text" name="id" required>
+
+    <button>delete an admin</button>
+  </form>
+
+  <form class="updateAdmin">
+    <label for="id">Admin id:</label>
+    <input type="text" name="id" required>
+
+    <button>update an admin</button>
+  </form>
+
+  <br>____________________________________________<br>
+
+  <form class="addEvent">
+
+    <h3>Event</h3>
+
+    <br><label for="title">title:</label>
+    <input type="string" name="title" required><br>
+
+    <label for="start">start:</label>
+    <input type="timestamp" name="start" required><br>
+
+    <label for="end">end:</label>
+    <input type="timestamp" name="end" required><br>
+
+    <label for="description">description:</label>
+    <input type="string" name="description"><br>
+
+    <label for="allDay">allDay:</label>
+    <input type="boolean" name="allDay" required><br>
+
+    <label for="free">free:</label>
+    <input type="boolean" name="free" required><br>
+
+    <label for="color">color:</label>
+    <input type="string" name="color" required><br>
+
+    <br><button>Add new Event</button>
+  </form>
+
+  <form class="deleteEvent">
+    <label for="id">Event id:</label>
+    <input type="text" name="id" required>
+
+    <button>delete an event</button>
+  </form>
+
+  <form class="updateEvent">
+    <label for="id">Event id:</label>
+    <input type="text" name="id" required>
+
+    <button>update an event</button>
+  </form>
+  
+
+  <script src="bundle.js"></script>
+</body>
+</html>
